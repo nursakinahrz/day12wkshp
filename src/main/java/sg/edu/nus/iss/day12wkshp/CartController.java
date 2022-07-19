@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(path = { "/cart "})
+//it is case sensitive - no space after 'cart'
+@RequestMapping(path = { "/cart"})
 public class CartController {
     
     @GetMapping(produces = { "text/html"})
